@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ro‘yxatdan o‘tish</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #111827;
+        }
+        .form-container {
+            max-width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        input, button {
+            width: 90%;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2 style="color: white;">Ismingizni kiriting</h2>
+        <input type="text" id="username" placeholder="Ismingiz" required>
+        <button id="registerBtn">Davom etish</button>
+    </div>
+
+    <script>
+        document.getElementById("registerBtn").addEventListener("click", function () {
+            let username = document.getElementById("username").value;
+
+            if (username) {
+                localStorage.setItem("username", username);
+                localStorage.setItem("loggedIn", "true");
+
+                alert("Xush kelibsiz, " + username + "!");
+                
+                window.location.href = "index.html";
+            } else {
+                alert("Iltimos, ismingizni kiriting!");
+            }
+        });
+    </script>
+
+</body>
+</html>
