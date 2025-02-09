@@ -1,16 +1,15 @@
 const chatbotResponses = {
-    "salom": "Salom! Qanday yordam bera olaman?",
-    "qanday gaps": "Hammasi yaxshi! Sizda-chi?",
-    "isming nima": "Men oddiy chatbotman!",
-    "rahmat": "Arzimaydi! 😊",
-    "Zone saytining asoschisi kim?": "Zone saytining asoschisi Shuhrat Zoirov",
+        "salom": "Salom! Qanday yordam bera olaman?",
+        "qanday gaps": "Hammasi yaxshi! Sizda-chi?",
+        "isming nima": "Mening ismim Zone AI",
+        "rahmat": "Arzimaydi! 😊",
+        "seni kim yaratgan": "Meni Shuhrat Zoirov yaratgan"
 };
 
 function getChatbotResponse(userInput) {
     userInput = userInput.toLowerCase();
     return chatbotResponses[userInput] || "Kechirasiz, bu savolga javob topilmadi.";
 }
-
 
 const chatInput = document.getElementById("chat-input");
 const chatButton = document.getElementById("chat-button");
