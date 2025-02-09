@@ -3,7 +3,8 @@ const chatbotResponses = {
         "qanday gaps": "Hammasi yaxshi! Sizda-chi?",
         "isming nima": "Mening ismim Zone AI",
         "rahmat": "Arzimaydi! 😊",
-        "seni kim yaratgan": "Meni Shuhrat Zoirov yaratgan"
+        "seni kim yaratgan": "Meni Shuhrat Zoirov yaratgan",
+        "ob-havo hozir qanday": "Men hozir ob-havoni bilmayman. Internetdan qidirib ko'ring!",
 };
 
 function getChatbotResponse(userInput) {

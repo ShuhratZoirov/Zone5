@@ -316,6 +316,9 @@
                 <input type="text" id="chat-input" placeholder="Savolingizni kiriting..." style="border: 1px solid white; background-color: transparent; padding: 10px 25px; border-radius: 15px; color: white; margin-top: 50px; text-align: center;">
                 <button id="chat-button"  style="background-color: transparent; border: 1px solid white; color: white; padding: 10px 15px; border-radius: 15px; color: white;">Yuborish</button>
                 <div id="chat-output"></div>
+
+                <button onclick="startListening()" style="padding: 10px 15px; background-color: transparent; border: 1px solid white; border-radius: 15px; color: white;">Gapiring</button>
+                <p><strong style="color: white;">Siz aytdingiz:</strong> <span id="output" style="color: white;"></span></p>
             </div>
         </div>
     </footer>
@@ -324,6 +327,27 @@
     
 
     <script src="./app.js"></script>
+
+    <script>
+        function startListening() {
+            let recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+            recognition.lang = "uz-UZ";
+
+            recognition.onresult = function(event) {
+                let text = event.results[0][0].transcript;
+                document.getElementById("output").textContent = text;
+                speakText(text);
+            };
+
+            recognition.start();
+        }
+
+        function speakText(text) {
+            let speech = new SpeechSynthesisUtterance(text);
+            speech.lang = "uz-UZ";
+            window.speechSynthesis.speak(speech);
+        }
+    </script>
 
     <script>
         window.onload = function () {
