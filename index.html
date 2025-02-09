@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <title>Zone</title>
 </head>
 <body>
 
-    <header>
+    <header data-aos="fade-down">
         <div class="container">
             <nav class="navbar">
-                <img src="./images/Logo.png" alt="logo">
+                <img src="./images/Logo.png" alt="logo" data-aos="zoom-in">
 
                 <ul class="nav_list">
-                    <li>
+                    <li data-aos="fade-up">
                         <a href="#" class="nav_link">Home</a>
                     </li>
-                    <li>
+                    <li data-aos="fade-up" data-aos-delay="100">
                         <a href="#" class="nav_link">About Us</a>
                     </li>
-                    <li>
+                    <li data-aos="fade-up" data-aos-delay="200">
                         <a href="#" class="nav_link">Service</a>
                     </li>
-                    <li>
+                    <li data-aos="fade-up" data-aos-delay="300">
                         <a href="#" class="nav_link">Pricing</a>
                     </li>
-                    <li>
+                    <li data-aos="fade-up" data-aos-delay="400">
                         <a href="#" class="nav_link">Blog</a>
                     </li>
-                    <li>
+                    <li data-aos="fade-up" data-aos-delay="500">
                         <button class="nav_btn">Contact Us</button>
                     </li>
                 </ul>
@@ -38,14 +39,14 @@
         </div>
     </header>
 
-    <main>
+    <main data-aos="fade-up">
         <div class="container">
-            <div class="wrapper">
+            <div class="wrapper" data-aos="fade-up">
                 <div class="wrapper_info">
-                    <h2 class="wrapper_h2">Virtual Reality Business Solutions</h2>
-                    <p class="wrapper_p1">We have over 15 year exprience in business consultting arena. We have over 15 year exprience in business consultting arena and artficial intelligence.</p>
+                    <h2 class="wrapper_h2" data-aos="zoom-in">Virtual Reality Business Solutions</h2>
+                    <p class="wrapper_p1" data-aos="fade-up" data-aos-delay="200">We have over 15 year exprience in business consultting arena. We have over 15 year exprience in business consultting arena and artficial intelligence.</p>
                     <div class="btn">
-                        <button class="wrapper_btn">Join Us</button>
+                        <button class="wrapper_btn" data-aos="flip-left" data-aos-delay="300">Join Us</button>
                         <img src="./images/Watch video.png" alt="watchvideo" class="watch">
                     </div>
                 </div>
@@ -58,37 +59,37 @@
             <p class="main_p1">We turn information into actionable insights We work to understand your issues and are driven to ask better questions in the pursuit of making work.</p>
 
             <ul class="main_list">
-                <li class="card_item">
+                <li class="card_item" data-aos="fade-up">
                     <img src="./images/Icon (3).png" alt="img" class="card_img">
                     <h2 class="card_h2">Order Management</h2>
                     <p class="card_p1">Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
                     <button class="card_btn">Learn more <img src="./images/Arrow.png" alt="arrow"></button>
                 </li>
-                <li class="card_item">
+                <li class="card_item" data-aos="fade-up" data-aos-delay="100">
                     <img src="./images/Icon.png" alt="img" class="card_img">
                     <h2 class="card_h2">Social Assistant</h2>
                     <p class="card_p1">Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
                     <button class="card_btn">Learn more <img src="./images/Arrow.png" alt="arrow"></button>
                 </li>
-                <li class="card_item">
+                <li class="card_item" data-aos="fade-up" data-aos-delay="100">
                     <img src="./images/Icon (1).png" alt="img" class="card_img">
                     <h2 class="card_h2">Crypto Platform</h2>
                     <p class="card_p1">Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
                     <button class="card_btn">Learn more <img src="./images/Arrow.png" alt="arrow"></button>
                 </li>
-                <li class="card_item">
+                <li class="card_item" data-aos="fade-up" data-aos-delay="100">
                     <img src="./images/Icon (1).png" alt="img" class="card_img">
                     <h2 class="card_h2">Smart Trading Modules</h2>
                     <p class="card_p1">Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
                     <button class="card_btn">Learn more <img src="./images/Arrow.png" alt="arrow"></button>
                 </li>
-                <li class="card_item">
+                <li class="card_item" data-aos="fade-up" data-aos-delay="100">
                     <img src="./images/Icon (2).png" alt="img" class="card_img">
                     <h2 class="card_h2">Analyzer of the News</h2>
                     <p class="card_p1">Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
                     <button class="card_btn">Learn more <img src="./images/Arrow.png" alt="arrow"></button>
                 </li>
-                <li class="card_item">
+                <li class="card_item" data-aos="fade-up" data-aos-delay="100">
                     <img src="./images/Icon (3).png" alt="img" class="card_img">
                     <h2 class="card_h2">Module of Price Notification</h2>
                     <p class="card_p1">Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
@@ -336,6 +337,11 @@
             window.location.href = "register.html";
         });
     </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
 </body>
 </html>
